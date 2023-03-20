@@ -12,7 +12,7 @@
     />
     <!-- end custom font -->
 
-    <title>We walk to you</title>
+    <title>flower the wall</title>
 
     <!-- styles -->
     <style>
@@ -35,13 +35,13 @@
     </style>
   </head>
   <body>
-    <h1>We walk to you</h1>
+    <h1>flower the fall</h1>
     <div id="poem"></div>
     <script>
       // set up the lists of words
-      const subjects = "you,I,we,they".split(","),
-        verbs = "run,walk,speak,drift,talk,whisper".split(","),
-        objects = "me,you,her,him,them".split(",");
+      const subjects = "flowers,branches,roots,leaves".split(","),
+        verbs = "grow,unroot,speak,drift,blow,whisper".split(","),
+        objects = "morning,dusk,nightfall,gravity,sunrise".split(",");
       // set up the counter
       let counter = 0;
 
@@ -61,7 +61,7 @@
           getRandomFromList(subjects) +
           " " +
           getRandomFromList(verbs) +
-          " to " +
+          " until " +
           getRandomFromList(objects);
         const lineText = document.createTextNode(text);
         line.appendChild(lineText);
@@ -95,7 +95,7 @@
           removeFirstLine();
         }
       }
-      window.setInterval(processPoem, 1000);
+      window.setInterval(processPoem, 1009);
     </script>
 
     <!-- include the Glitch button to show what the webpage is about and
