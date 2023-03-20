@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- custom font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap"
-      rel="stylesheet"
-    />
+    <link<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <!-- end custom font -->
 
     <title>flower the wall</title>
@@ -17,14 +16,14 @@
     <!-- styles -->
     <style>
       body {
-        font-family: "Dosis", sans-serif;
+        font-family: font-family: 'EB Garamond', serif;;
         margin: 2em;
-        background-color: #000;
-        color: #fff;
+        background-color: #FCA362;
+        color: #F58064;
         font-size: 1.2em;
       }
       h1 {
-        color: #fff;
+        color: #F58064;
       }
       #poem > div {
         height: 1.2em;
@@ -39,9 +38,9 @@
     <div id="poem"></div>
     <script>
       // set up the lists of words
-      const subjects = "flowers,branches,roots,leaves".split(","),
-        verbs = "grow,unroot,speak,drift,blow,whisper".split(","),
-        objects = "morning,dusk,nightfall,gravity,sunrise".split(",");
+      const subjects = "flowers,branches,worms,leaves".split(","),
+        verbs = "keep,unpeel,speak,drift,blow,whisper".split(","),
+        objects = "daylight,nightfall,midnight,sunset,sunrise".split(",");
       // set up the counter
       let counter = 0;
 
@@ -61,7 +60,7 @@
           getRandomFromList(subjects) +
           " " +
           getRandomFromList(verbs) +
-          " until " +
+          " inside the " +
           getRandomFromList(objects);
         const lineText = document.createTextNode(text);
         line.appendChild(lineText);
